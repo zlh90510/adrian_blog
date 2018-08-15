@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class NotFoundPage extends React.PureComponet {
+export default class NotFoundPage extends React.PureComponent {
   render(){
     return (
       <div>

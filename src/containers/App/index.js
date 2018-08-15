@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Switch, Route ,Redirect} from 'react-router-dom';
-import {message} from 'antd';
+import { Switch, Route } from 'react-router-dom';
 
 import HomePage from '../HomePage';
 import NotFoundPage from '../NotFoundPage';
 
-const pubsub = require('../../utils/pubsub-js');
 const blogUrl = require('../../utils/webConfig').blogUrl;
 
 const HomePageRoute = ({component: Component, ...rest}) => (

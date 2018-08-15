@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default class HomePage extends React.PureComponet {
+export default class HomePage extends React.PureComponent {
+
   render(){
     return (
       <div>
