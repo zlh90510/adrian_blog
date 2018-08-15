@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>矮大紧的日常 | parksben's blog</title>
+    <script type="text/javascript">
+      var segmentCount = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+作者：彭逸之
+链接：https://www.jianshu.com/p/4d8011e9c805
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
