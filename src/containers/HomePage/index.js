@@ -1,17 +1,19 @@
 import React from 'react';
+import { Layout } from 'antd';
+
+import Header from './Header';
+import Content from './Content';
+import Footer from './Footer';
 
 export default class HomePage extends React.PureComponent {
 
   render(){
     return (
-      <div>
-        <h1>
-          This is a react HomePage!!
-        </h1>
-        <h2>
-          HelloWord!
-        </h2>
-      </div>
+      <Layout>
+        <Header />
+        <Content />
+        <Footer />
+      </Layout>
     )
   }
 }
