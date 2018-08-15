@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <HomePageRoute path={`${blogUrl}`} component={HomePage}/>
+          <HomePageRoute path={`${process.env.PUBLIC_URL}/blog`} component={HomePage}/>
           <Route component={NotFoundPage} />
         </Switch>
       </div>

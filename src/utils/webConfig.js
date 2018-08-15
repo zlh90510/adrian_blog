@@ -1,3 +1,3 @@
 module.exports = {
-  blogUrl: "/blog",
+  blogUrl: "blog",
 };

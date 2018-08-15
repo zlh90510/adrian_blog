@@ -9,6 +9,7 @@ export default class NotFoundPage extends React.PureComponent {
         </h1>
         <h2>
           404...
+          Hi
         </h2>
       </div>
     )
