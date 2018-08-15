@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Router, Route } from 'react-router-dom';
+import createHashHistory from 'history/createHashHistory'
 
 import HomePage from '../HomePage';
 import NotFoundPage from '../NotFoundPage';
 
 const blogUrl = require('../../utils/webConfig').blogUrl;
+
+const history = createHashHistory();
 
 const HomePageRoute = ({component: Component, ...rest}) => (
   <Route {...rest} render={props  => (
@@ -16,10 +19,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Switch>
-          <HomePageRoute path={`${process.env.PUBLIC_URL}/blog`} component={HomePage}/>
-          <Route component={NotFoundPage} />
-        </Switch>
+        <Router history={history} >
+          <Switch>
+            <HomePageRoute path='/blog' component={HomePage}/>
+            <Route path='/page/:pageNmae' component={HomePage} />
+            <Route component={NotFoundPage} />
+          </Switch>
+        </Router>
       </div>
     );
   }
